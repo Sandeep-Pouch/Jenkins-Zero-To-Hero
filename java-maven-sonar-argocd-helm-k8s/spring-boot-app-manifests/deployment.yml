@@ -1,21 +1,42 @@
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
 apiVersion: apps/v1
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
 kind: Deployment
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
 metadata:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
   name: spring-boot-app
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
   labels:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
     app: spring-boot-app
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
 spec:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
   replicas: 2
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
   selector:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
     matchLabels:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
       app: spring-boot-app
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
   template:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
     metadata:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
       labels:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
         app: spring-boot-app
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
     spec:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
       containers:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
       - name: spring-boot-app
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
         image: abhishekf5/ultimate-cicd:replaceImageTag
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
         ports:
+mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
         - containerPort: 8080
