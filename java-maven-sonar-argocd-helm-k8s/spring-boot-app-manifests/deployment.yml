@@ -1,84 +1,21 @@
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
 apiVersion: apps/v1
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
 kind: Deployment
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
 metadata:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
   name: spring-boot-app
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
   labels:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
     app: spring-boot-app
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
 spec:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
   replicas: 2
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
   selector:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
     matchLabels:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
       app: spring-boot-app
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
   template:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
     metadata:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
       labels:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
         app: spring-boot-app
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
     spec:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
       containers:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
       - name: spring-boot-app
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
         image: abhishekf5/ultimate-cicd:replaceImageTag
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
         ports:
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:7
-mage: abhishekf5/ultimate-cicd:replaceImageTag | image: abhishekf5/ultimate-cicd:8
         - containerPort: 8080
